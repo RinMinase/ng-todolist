@@ -25,10 +25,9 @@
             "index": "src/index.html",
             "main": "src/index.ts",
             "tsConfig": "tsconfig.json",
-            "assets": [ "src/favicon.ico", "src/assets" ],
+            "assets": [ "src/assets" ],
             "styles": [ "src/index.scss" ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
