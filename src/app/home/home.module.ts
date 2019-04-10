@@ -2,7 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
-import { MatButtonModule, MatCheckboxModule, MatGridListModule } from '@angular/material';
+
+import { 
+	MatButtonModule, 
+	MatCheckboxModule, 
+	MatGridListModule,
+} from '@angular/material';
 
 @NgModule({
 	declarations: [HomeComponent],
