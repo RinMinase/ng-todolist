@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.12
+    branches:
+      only:
+        - master
+    steps:
+      - checkout
+
+      - run:
+          name: Installing dependenices
+          command: yarn install --frozen-lockfile
+
+      - run:
+          name: Building source code
+          command: yarn build
+
+      - run:
+          name: Deploying to Firebase
+          command: ./node_modules/.bin/firebase deploy --project "ng-todolist" --only hosting --token=$FIREBASE_DEPLOY_TOKEN --non-interactive
