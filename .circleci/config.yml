@@ -19,4 +19,4 @@ jobs:
 
       - run:
           name: Deploying to Firebase
-          command: ./node_modules/.bin/firebase deploy --project "ng-todolist" --only hosting --token=$FIREBASE_DEPLOY_TOKEN --non-interactive
+          command: ./node_modules/.bin/firebase deploy --project "ng-todolist-fire" --only hosting --token=$FIREBASE_DEPLOY_TOKEN --non-interactive
