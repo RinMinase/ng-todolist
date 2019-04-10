@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-todolist",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/index.ts",
             "tsConfig": "tsconfig.json",
