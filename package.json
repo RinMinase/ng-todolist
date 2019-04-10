@@ -1,0 +1,33 @@
+{
+  "name": "ng-todolist",
+  "author": "Rin Minase",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RinMinase/ng-todolist"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^7.2.12",
+    "@angular/core": "^7.2.12",
+    "@angular/forms": "^7.2.12",
+    "@angular/platform-browser": "^7.2.12",
+    "@angular/platform-browser-dynamic": "^7.2.12",
+    "@angular/router": "^7.2.12",
+    "rxjs": "^6.4.0",
+    "zone.js": "0.8.29"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.13.8",
+    "@angular/cli": "^7.3.8",
+    "@angular/compiler": "^7.2.12",
+    "@angular/compiler-cli": "^7.2.12",
+    "@types/node": "^11.13.2",
+    "typescript": "3.2.4"
+  }
+}
