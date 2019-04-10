@@ -12,4 +12,5 @@
 # misc
 /.sass-cache
 /.sonarlint
+/.firebase
 *.log
