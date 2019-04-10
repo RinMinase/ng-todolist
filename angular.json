@@ -55,13 +55,6 @@
           "configurations": {
             "production": { "browserTarget": "ng-todolist:build:production" }
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [ "tsconfig.json" ],
-            "exclude": [ "**/node_modules/**" ]
-          }
         }
       }
     }
