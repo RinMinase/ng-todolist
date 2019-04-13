@@ -6,6 +6,9 @@
 				<button mat-icon-button class="ml-auto mr-0">
 					<i class="material-icons">delete</i>
 				</button>
+				<button mat-icon-button class="mr-0" (click)="hardDelete(item)">
+					<i class="material-icons">delete_forever</i>
+				</button>
 			</mat-list-item>
 		</mat-list>
 		<form [formGroup]="addForm" (ngSubmit)="add()">

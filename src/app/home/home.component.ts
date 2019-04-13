@@ -40,6 +40,12 @@ export class HomeComponent implements OnInit {
 		return item.payload.doc.data();
 	}
 
+	hardDelete(data: any) {
+		this.firestore.collection('todo')
+			.doc(data.payload.doc.id)
+			.delete();
+	}
+
 	private retrieve() {
 		this.firestore
 			.collection('todo', ref => ref
