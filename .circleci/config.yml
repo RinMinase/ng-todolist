@@ -20,7 +20,3 @@ jobs:
       - run:
           name: Deploying to Firebase
           command: ./node_modules/.bin/firebase deploy --project "ng-todolist-fire" --only hosting --token=$FIREBASE_DEPLOY_TOKEN --non-interactive
-
-      - run:
-          name: Deploying to Zeit
-          command: ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN
