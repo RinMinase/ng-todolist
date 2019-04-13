@@ -27,4 +27,4 @@ jobs:
 
       - run:
           name: Removing previous Zeit deployments
-          command: ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN rm "Angular 7 Todo List" --safe
+          command: ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN rm "Angular 7 Todo List"
