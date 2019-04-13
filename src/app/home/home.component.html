@@ -8,9 +8,11 @@
 				</button>
 			</mat-list-item>
 		</mat-list>
-		<mat-form-field>
-			<input matInput placeholder="Add a new item" [formControl]="addField">
-			<button matSuffix mat-button (click)="add()">Add</button>
-		</mat-form-field>
+		<form [formGroup]="addForm" (ngSubmit)="add()">
+			<mat-form-field>
+				<input matInput placeholder="Add a new item" formControlName="add">
+				<button matSuffix mat-button type="submit">Add</button>
+			</mat-form-field>
+		</form>
 	</mat-card>
 </div>
