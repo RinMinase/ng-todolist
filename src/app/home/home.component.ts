@@ -30,13 +30,21 @@ export class HomeComponent implements OnInit {
 		}
 	}
 
+	delete(data: any) {
+		this.firestore.collection('todo')
+			.doc(data.payload.doc.id)
+			.set({ deleted: true }, { merge: true });
+	}
+
 	getData(item: any) {
 		return item.payload.doc.data();
 	}
 
 	private retrieve() {
 		this.firestore
-			.collection('todo', ref => ref.orderBy('timestamp'))
+			.collection('todo', ref => ref
+				.orderBy('timestamp')
+				.where('deleted', '==', false))
 			.snapshotChanges()
 			.subscribe(response => this.list = response);
 	}
