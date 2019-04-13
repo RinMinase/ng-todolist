@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '@app/app.service';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
@@ -10,29 +10,20 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class HomeComponent implements OnInit {
 
-	homeForm: FormGroup;
+	addField = new FormControl('');
 	list: any;
 
 	constructor(
-		private formBuilder: FormBuilder,
 		private firestore: AngularFirestore,
 		private service: AppService
 	) { }
 
 	ngOnInit() {
-		this.homeForm = this.formBuilder.group({
-			item: ['', Validators.required],
-		});
-
 		this.retrieve();
 	}
 
-	onSubmit() {
-		this.service.add(this.homeForm.value).then((res: any) => { });
-	}
-
-	get form() {
-		return this.homeForm.controls
+	add() {
+		this.service.add(this.addField.value);
 	}
 
 	getData(item: any) {
@@ -40,7 +31,8 @@ export class HomeComponent implements OnInit {
 	}
 
 	private retrieve() {
-		this.firestore.collection('todo')
+		this.firestore
+			.collection('todo', ref => ref.orderBy('timestamp'))
 			.snapshotChanges()
 			.subscribe(response => this.list = response);
 	}

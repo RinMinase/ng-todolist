@@ -9,8 +9,8 @@
 			</mat-list-item>
 		</mat-list>
 		<mat-form-field>
-			<input matInput placeholder="Add a new item">
-			<button matSuffix mat-button>Add</button>
+			<input matInput placeholder="Add a new item" [formControl]="addField">
+			<button matSuffix mat-button (click)="add()">Add</button>
 		</mat-form-field>
 	</mat-card>
 </div>
