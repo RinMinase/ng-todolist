@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": "ngx-todo",
     "routes": [
         {
             "src": "/(.*)",
