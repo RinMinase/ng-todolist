@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "name": "ng-todo",
     "alias": "ngx-todo",
     "routes": [
         {
