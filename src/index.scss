@@ -9,6 +9,11 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 @include angular-material-theme($candy-app-theme);
 
 /** ================================================ */
+
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons.scss';
+
+/** ================================================ */
 * { font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; }
 body { margin: 0; }
 
