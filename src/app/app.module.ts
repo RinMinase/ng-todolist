@@ -6,7 +6,10 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 import { AppComponent } from './app.component';
+
+import { NavbarModule } from './navbar/navbar.module';
 import { HomeModule } from './home/home.module';
+
 import { environment } from '@env/environment';
 
 const routes: Routes = [{
@@ -24,6 +27,8 @@ const routes: Routes = [{
 
 		AngularFireModule.initializeApp(environment.firebaseConfig),
 		AngularFirestoreModule,
+
+		NavbarModule,
 
 		HomeModule,
 	],
