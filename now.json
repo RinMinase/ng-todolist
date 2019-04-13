@@ -11,8 +11,5 @@
             "src": "dist/*",
             "use": "@now/static"
         }
-    ],
-    "alias": [
-        "ngx-todo"
     ]
 }
