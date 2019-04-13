@@ -1,6 +1,28 @@
-<mat-grid-list cols="4" [style.background]="'skyblue'">
-	<mat-grid-tile>Tile 1 </mat-grid-tile>
-	<mat-grid-tile>Tile 2 </mat-grid-tile>
-	<mat-grid-tile>Tile 3 </mat-grid-tile>
-	<mat-grid-tile>Tile 4 </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+	<mat-card>
+		<mat-list>
+			<mat-list-item>
+				<mat-checkbox>Test 1</mat-checkbox>
+				<button mat-icon-button class="ml-auto mr-0">
+					<i class="material-icons">delete</i>
+				</button>
+			</mat-list-item>
+			<mat-list-item>
+				<mat-checkbox>Test 2</mat-checkbox>
+				<button mat-icon-button class="ml-auto mr-0">
+					<i class="material-icons">delete</i>
+				</button>
+			</mat-list-item>
+			<mat-list-item>
+				<mat-checkbox>Test 3</mat-checkbox>
+				<button mat-icon-button class="ml-auto mr-0">
+					<i class="material-icons">delete</i>
+				</button>
+			</mat-list-item>
+		</mat-list>
+		<mat-form-field>
+			<input matInput placeholder="Add a new item">
+			<button matSuffix mat-button>Add</button>
+		</mat-form-field>
+	</mat-card>
+</div>

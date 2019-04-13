@@ -5,8 +5,11 @@ import { RouterModule } from '@angular/router';
 
 import { 
 	MatButtonModule, 
+	MatFormFieldModule,
+	MatInputModule,
+	MatCardModule,
+	MatListModule,
 	MatCheckboxModule, 
-	MatGridListModule,
 } from '@angular/material';
 
 import { HomeComponent } from './home.component';
@@ -20,7 +23,10 @@ import { HomeComponent } from './home.component';
 
 		MatButtonModule,
 		MatCheckboxModule,
-		MatGridListModule,
+		MatCardModule,
+		MatFormFieldModule,
+		MatInputModule,
+		MatListModule,
 	]
 })
 export class HomeModule { }
