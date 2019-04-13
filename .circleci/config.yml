@@ -23,4 +23,6 @@ jobs:
 
       - run:
           name: Deploying to Zeit
-          command: ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN && ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN alias ngx-todo
+          commands:
+            - ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN
+            - ./node_modules/.bin/now -t $NOW_DEPLOY_TOKEN alias ng-todo
