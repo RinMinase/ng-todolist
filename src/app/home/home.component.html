@@ -1,20 +1,8 @@
 <div class="container">
 	<mat-card>
 		<mat-list>
-			<mat-list-item>
-				<mat-checkbox>Test 1</mat-checkbox>
-				<button mat-icon-button class="ml-auto mr-0">
-					<i class="material-icons">delete</i>
-				</button>
-			</mat-list-item>
-			<mat-list-item>
-				<mat-checkbox>Test 2</mat-checkbox>
-				<button mat-icon-button class="ml-auto mr-0">
-					<i class="material-icons">delete</i>
-				</button>
-			</mat-list-item>
-			<mat-list-item>
-				<mat-checkbox>Test 3</mat-checkbox>
+			<mat-list-item *ngFor="let item of list">
+				<mat-checkbox>{{ getData(item).value }}</mat-checkbox>
 				<button mat-icon-button class="ml-auto mr-0">
 					<i class="material-icons">delete</i>
 				</button>
