@@ -5,5 +5,8 @@
             "src": "dist/*",
             "use": "@now/static"
         }
+    ],
+    "alias": [
+        "ng-todo"
     ]
 }
