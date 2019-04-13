@@ -9,6 +9,16 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 @include angular-material-theme($candy-app-theme);
 
 /** ================================================ */
-* {
-	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+* { font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; }
+body { margin: 0; }
+
+.container {
+	width: 750px;
+	margin: 20px auto;
+	padding: 20px;
+
+	@media (max-width: 920px) {
+		width: unset;
+		margin: 20px 10px;
+	}
 }
