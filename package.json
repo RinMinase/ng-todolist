@@ -35,6 +35,7 @@
     "@types/node": "^11.13.4",
     "firebase": "^5.9.4",
     "firebase-tools": "^6.6.0",
+    "now": "^15.0.4",
     "typescript": "3.2.4"
   },
   "resolutions": {
