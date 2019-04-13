@@ -25,7 +25,7 @@
             "index": "src/index.html",
             "main": "src/index.ts",
             "tsConfig": "tsconfig.json",
-            "assets": [ "src/assets" ],
+            "assets": [ "src/favicon.ico" ],
             "styles": [ "src/index.scss" ],
             "scripts": []
           },
