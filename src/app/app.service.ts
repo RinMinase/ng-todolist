@@ -11,7 +11,7 @@ export class AppService {
 				.collection("todo")
 				.add({
 					deleted: false,
-					status: true,
+					status: false,
 					value: data,
 					timestamp: new Date().getTime(),
 				})
