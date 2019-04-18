@@ -3,8 +3,12 @@
 		<mat-list>
 			<mat-list-item *ngFor="let item of list">
 				<mat-checkbox (change)="toggleStatus(item)" 
-					[checked]="getData(item).status"
-					[class.finished]="getData(item).status">{{ getData(item).value }}</mat-checkbox>
+					[checked]="getData(item).status"></mat-checkbox>
+				<p class="ml-3" 
+					[class.finished]="getData(item).status" 
+					[textContent]="getData(item).value"
+					(keyup.enter)="edit($event, item)"
+					contenteditable>{{ getData(item).value }}</p>
 				<button mat-icon-button class="ml-auto mr-0" (click)="delete(item)">
 					<i class="material-icons">delete</i>
 				</button>

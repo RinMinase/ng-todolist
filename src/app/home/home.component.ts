@@ -30,6 +30,16 @@ export class HomeComponent implements OnInit {
 		}
 	}
 
+	edit($event: any, data: any) {
+		$event.target.blur();
+		const value = $event.target.outerText.replace(/(\r\n|\n|\r)/gm,"");
+		$event.target.innerText = value;
+
+		this.firestore.collection('todo')
+			.doc(data.payload.doc.id)
+			.set({ value }, { merge: true });
+	}
+
 	delete(data: any) {
 		this.firestore.collection('todo')
 			.doc(data.payload.doc.id)
