@@ -32,10 +32,10 @@
     "@angular/cli": "^7.3.8",
     "@angular/compiler": "^7.2.13",
     "@angular/compiler-cli": "^7.2.13",
-    "@types/node": "^11.13.4",
+    "@types/node": "^11.13.5",
     "firebase": "^5.9.4",
     "firebase-tools": "^6.6.0",
-    "now": "^15.0.4",
+    "now": "^15.0.5",
     "typescript": "3.2.4"
   },
   "resolutions": {
