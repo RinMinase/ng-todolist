@@ -46,6 +46,18 @@ export class HomeComponent implements OnInit {
 			.delete();
 	}
 
+	toggleStatus(data: any) {
+		if (this.getData(data).status === true) {
+			this.firestore.collection('todo')
+				.doc(data.payload.doc.id)
+				.set({ status: false }, { merge: true });
+		} else {
+			this.firestore.collection('todo')
+				.doc(data.payload.doc.id)
+				.set({ status: true }, { merge: true });
+		}
+	}
+
 	private retrieve() {
 		this.firestore
 			.collection('todo', ref => ref

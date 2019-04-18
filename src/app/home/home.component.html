@@ -1,9 +1,11 @@
 <div class="container">
 	<mat-card>
 		<mat-list>
-			<mat-list-item *ngFor="let item of list" (click)="delete(item)">
-				<mat-checkbox>{{ getData(item).value }}</mat-checkbox>
-				<button mat-icon-button class="ml-auto mr-0">
+			<mat-list-item *ngFor="let item of list">
+				<mat-checkbox (change)="toggleStatus(item)" 
+					[checked]="getData(item).status"
+					[class.finished]="getData(item).status">{{ getData(item).value }}</mat-checkbox>
+				<button mat-icon-button class="ml-auto mr-0" (click)="delete(item)">
 					<i class="material-icons">delete</i>
 				</button>
 				<button mat-icon-button class="mr-0" (click)="hardDelete(item)">
