@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
 import { AngularFireModule } from "@angular/fire";
-import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFirestoreModule, FirestoreSettingsToken } from "@angular/fire/firestore";
 
 import { AppComponent } from './app.component';
 
@@ -32,7 +32,10 @@ const routes: Routes = [{
 
 		HomeModule,
 	],
-	providers: [],
+	providers: [{
+		provide: FirestoreSettingsToken,
+		useValue: {},
+	}],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
