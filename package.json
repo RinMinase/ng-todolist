@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^7.2.13",
     "@angular/router": "^7.2.13",
     "material-icons": "^0.3.1",
-    "rxjs": "^6.4.0",
+    "rxjs": "^6.5.1",
     "zone.js": "0.8.29"
   },
   "devDependencies": {
@@ -32,9 +32,9 @@
     "@angular/cli": "^7.3.8",
     "@angular/compiler": "^7.2.13",
     "@angular/compiler-cli": "^7.2.13",
-    "@types/node": "^11.13.6",
+    "@types/node": "^11.13.7",
     "firebase": "^5.10.0",
-    "firebase-tools": "^6.7.0",
+    "firebase-tools": "^6.7.1",
     "now": "^15.0.6",
     "typescript": "3.2.4"
   },
