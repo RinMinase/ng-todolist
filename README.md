@@ -1,4 +1,4 @@
-<h1 align="center"> Angular 7 Todo List </h1>
+<h1 align="center"> Angular 8 Todo List </h1>
 
 <p align="center">
     <a href="https://circleci.com/gh/RinMinase/ng-todolist">
@@ -13,7 +13,7 @@
 </p>
 <p align="center">
     <a href="https://nodejs.org">
-        <img alt="Node" src="https://img.shields.io/badge/node-%5E6.14.0%20%7C%7C%20%5E8.10.0%20%7C%7C%20%3E%3D9.10.0-green.svg?logo=node.js&logoColor=white">
+        <img alt="Node" src="https://img.shields.io/badge/node-%5E10.12.0%20%7C%7C%20%3E%3D12.0.0-green.svg?logo=node.js&logoColor=white">
     </a>
     <a href="https://yarnpkg.com/">
         <img alt="Yarn" src="https://img.shields.io/badge/yarn-%5E1.10.0-blue.svg">
@@ -70,7 +70,7 @@ Run `yarn ng g c <component-name>` to generate a new component. You can also use
     └── <name>.module.ts          # Module
 
 ## Built with
-* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 7](https://angular.io/) - Web Framework
+* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 8](https://angular.io/) - Web Framework
 * <img width=20 height=20 src="https://www.typescriptlang.org/assets/images/icons/favicon-32x32.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
 * <img width=20 height=20 src="https://sass-lang.com/favicon.ico"> [Sassy CSS (SCSS)](https://sass-lang.com/) - CSS pre-processor
 * <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular Material](https://material.angular.io/) - HTML Framework (layout)
